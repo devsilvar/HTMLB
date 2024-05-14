@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .item {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: red;
+      }
+
+      .item:hover {
+        transform: translate(100vw);
+        transition-duration: 4.2s;
+        transition-timing-function: ease-in-out;
+        background-color: green;
+      }
+
+      div:hover {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        transform: scale(2);
+        transform: translateX(200px);
+      } */
+
+      /* 
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        transition: transform 2s;
+      } */
+
+      @keyframes firstanim {
+        0% {
+          background: red;
+          left: 200px;
+          top: 0px;
+          transform: rotate(10deg);
+        }
+        25% {
+          background: yellow;
+          left: 400px;
+          top: 100px;
+          transform: rotate(50deg);
+        }
+        50% {
+          background: orange;
+          left: 600px;
+          top: 300px;
+          transform: rotate(100deg);
+        }
+        75% {
+          background: red;
+          left: 200px;
+          top: 300px;
+          transform: rotate(180deg);
+        }
+        100% {
+          background: red;
+          left: 200px;
+          top: 400px;
+          transform: rotate(360deg);
+        }
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        animation-name: firstanim;
+        animation-duration: 1.1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: ;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Css ANimation</h2>
+
+    <div class="box"></div>
+
+    <div class="item"></div>
+  </body>
+</html>

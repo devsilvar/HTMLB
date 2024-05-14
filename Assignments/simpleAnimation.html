@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes goRound {
+        0% {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        10% {
+          position: absolute;
+          top: 0;
+          left: 250px;
+        }
+        20% {
+          position: absolute;
+          top: 0;
+          left: 750px;
+        }
+
+        30% {
+          position: absolute;
+          top: 0vh;
+          left: 1150px;
+        }
+
+        40% {
+          position: absolute;
+          top: 10vh;
+          left: 1150px;
+        }
+
+        50% {
+          position: absolute;
+          top: 30vh;
+          left: 1150px;
+        }
+
+        60% {
+          position: absolute;
+          top: 65vh;
+          left: 1150px;
+        }
+
+        70% {
+          background-color: red;
+          position: absolute;
+          top: 65vh;
+          left: 990px;
+        }
+        80% {
+          position: absolute;
+          top: 65vh;
+          left: 500px;
+          background-color: teal;
+        }
+        90% {
+          position: absolute;
+          top: 65vh;
+          left: 200px;
+          background-color: teal;
+        }
+
+        92% {
+          position: absolute;
+          top: 65vh;
+          left: 200px;
+          background-color: teal;
+        }
+
+        94% {
+          position: absolute;
+          top: 65vh;
+          left: 0px;
+          background-color: teal;
+        }
+
+        96% {
+          position: absolute;
+          top: 35vh;
+          left: 0px;
+          background-color: teal;
+        }
+
+        100% {
+          position: absolute;
+          top: 0vh;
+          left: 0px;
+          background-color: teal;
+        }
+      }
+
+      .animation {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: green;
+        animation-name: goRound;
+        animation-duration: 3.1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation"></div>
+  </body>
+</html>

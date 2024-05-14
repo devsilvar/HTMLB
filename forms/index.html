@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <style>
+      form {
+        border: 1px solid black;
+        width: max-content;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      form div {
+        /* margin-bottom: 20px; */
+      }
+      span {
+        display: block;
+      }
+
+      button {
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="Name">Enter Your Name</label>
+        <input type="text" placeholder="Enter Your name" />
+      </div>
+
+      <div>
+        <label for="Name">Enter Your Email</label>
+        <input type="email" placeholder="Enter Your Email" required />
+      </div>
+
+      <div>
+        <label for="Age">Enter Your Age</label>
+        <input type="number" placeholder="Enter Your Age" />
+      </div>
+
+      <div>
+        <label for="password">Enter your Password</label>
+        <input type="text" placeholder="Enter Your Age" />
+      </div>
+
+      <div>
+        <label for="time">Enter the time you submmited</label>
+        <input
+          type="hidden"
+          placeholder="Whne did you submit"
+          value="This is where i am"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="">Are You an Employed Person</label>
+        <span> <input type="radio" name="wisdom" id="no" /> Yes </span>
+        <span> <input type="radio" name="wisdom" id="yes" />No </span>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grids</title>
+
+    <style>
+      section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+      .box {
+        background-color: red;
+      }
+
+      section .box:first-child {
+        background-color: pink;
+        grid-row-start: span 3;
+      }
+
+      section .box:nth-child(2) {
+        background-color: green;
+        grid-column-start: span 2;
+      }
+
+      section .box:nth-child(4) {
+        grid-row-start: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box">A</div>
+      <div class="box special">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+      <div class="box">F</div>
+    </section>
+  </body>
+</html>
