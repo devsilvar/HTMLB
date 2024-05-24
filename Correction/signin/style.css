@@ -86,7 +86,6 @@ input {
   top: 15px;
   right: 15px;
   border-radius: 50%;
-
   background: #8e0e00; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #1f1c18, #8e0e00);
   background: linear-gradient(to left, #1f1c18, #8e0e00);
